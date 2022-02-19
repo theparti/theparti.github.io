@@ -111,7 +111,7 @@ input, select, textarea {
 		-ms-transition: color .2s ease-in-out;
 		transition: color .2s ease-in-out;
 		color: #43B3E0;
-		text-decoration: underline;
+
 	}
 
 		a:hover {
@@ -149,17 +149,17 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5 {
 		color: #3e3e3e;
 		margin: 0 0 0.75em 0;
 	}
 
-	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	h1 a, h2 a, h3 a, h4 a, h5 a,  {
 		text-decoration: none;
 		color: inherit;
 	}
 
-	h2, h3, h4, h5, h6 {
+	h2, h3, h4, h5 {
 		font-weight: 700;
 	}
 
@@ -221,6 +221,7 @@ input, select, textarea {
 		footer > p {
 			font-size: 1.25em;
 		}
+
 
 /* Container */
 
@@ -1912,14 +1913,17 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: #fff;
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+
 		text-align: center;
 		padding: 2em;
 	}
 
 		.box.style1 {
-			padding: 3em 2em 3.5em 2em;
+			padding: 1em 2em 3.5em 2em;
+			display: block;
+			box-shadow: none;
+			font-size: 11.5pt;
+
 		}
 
 			.box.style1 h3 {
@@ -1936,6 +1940,14 @@ input, select, textarea {
 			top: 2em;
 			margin: -4em 0 4em -4em;
 			width: auto;
+		}
+		.box.style2 {
+			box-shadow: 0px 0px 1px 1px rgba(200,200,200,1);
+			outline-color: gray;
+			background-color: #F8F8F8;
+		}
+		.box.style2:hover {
+  		background-color: #E9E9E9 ;
 		}
 
 /* Icons */
@@ -1988,31 +2000,35 @@ input, select, textarea {
 /* Wrappers */
 
 	.wrapper {
-		background-image: url("images/bg.png");
-		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
 		text-align: center;
 	}
 
 		.wrapper.style1 {
-			background-image: none;
-			background-color: #fff;
+			background-color: #FFFFFF ;
+			padding: 2em 0 8em 0;
+			background-image: url("images/bg.png");
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
-			text-shadow: 1px 1px 0px #fff;
+			background-color: #EAEFE7;
+			padding: 2em 0 8em 0;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
-			text-shadow: 1px 1px 0px #fff;
+			background-color: #F1E8D8;
+			padding: 2em 0 8em 0;
 		}
 
 		.wrapper.style4 {
 			background-color: #303030;
 			color: #999;
-			text-shadow: -1px -1px 0px #181818;
+
+		}
+		.wrapper.style5 {
+			background-color: #ffffff;
+			padding: 2em 0 8em 0;
+			h1:
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
@@ -2033,6 +2049,8 @@ input, select, textarea {
 				.wrapper.style4 form textarea:focus {
 					background: #252525;
 				}
+
+/* Nav */
 
 /* Nav */
 
@@ -2098,6 +2116,7 @@ input, select, textarea {
 					border-right: solid 0.75em transparent;
 					border-top: solid 0.6em #282828;
 				}
+
 
 /* Articles */
 
@@ -2183,11 +2202,11 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 			input, textarea, select {
-				font-size: 11pt;
+				font-size: 12pt;
 			}
 
 			header {
@@ -2253,9 +2272,15 @@ input, select, textarea {
 				letter-spacing: 0;
 			}
 
-			h1, h2, h3, h4, h5, h6 {
+			h1, h2, h3, h4, h5 {
 				font-size: 1.25em;
 				margin: 0 0 0.4em 0;
+				font-color: #000000;
+			}
+			h6 {
+				font-size: 1.25em;
+				font-color: #275DA4;
+				font-weight: 600;
 			}
 
 			h1 {
@@ -2269,6 +2294,7 @@ input, select, textarea {
 
 				header > p {
 					font-size: 1.25em;
+
 				}
 
 			footer {
@@ -2401,7 +2427,7 @@ input, select, textarea {
 				}
 
 					#nav a:hover {
-						background-color: transparent;
+						background-color: white;
 					}
 
 		/* Articles */
